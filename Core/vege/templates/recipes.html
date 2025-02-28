@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block start %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    h1 {
+        color: #ff6600;
+    }
+    .recipe {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    .recipe img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+    }
+    .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+    }
+</style>
+
+<div class="container">
+    <h1>Delicious Recipes</h1>
+    
+    <div class="recipe">
+        <h2>🍕 Margherita Pizza</h2>
+        <img src="https://source.unsplash.com/300x200/?pizza" alt="Pizza">
+        <p>A classic Italian pizza with fresh basil, mozzarella, and tomato sauce.</p>
+    </div>
+
+    <div class="recipe">
+        <h2>🍔 Cheeseburger</h2>
+        <img src="https://source.unsplash.com/300x200/?burger" alt="Burger">
+        <p>Juicy grilled beef patty with melted cheese, lettuce, and tomato.</p>
+    </div>
+
+    <div class="recipe">
+        <h2>🍜 Chicken Noodles</h2>
+        <img src="https://source.unsplash.com/300x200/?noodles" alt="Noodles">
+        <p>Hot and spicy chicken noodles with vegetables and soy sauce.</p>
+    </div>
+
+    <div class="footer">
+        <p>Made with ❤️ by Your Website</p>
+    </div>
+</div>
+{% endblock %}
